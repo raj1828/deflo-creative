@@ -18,26 +18,26 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
 
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="#home" class="logo">DefLo</a>
+            <a href="/" class="logo">DefLo</a>
             <div class="menu-toggle">&#9776;</div> <!-- Menu icon for mobile -->
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about-section">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <!-- <li><a href="#experience">Experience</a></li> -->
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="social-icons">
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/raj-mhatre-212953200/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/raj1828" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/deflo_krishh" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </nav>
@@ -51,7 +51,7 @@
             <p class="tagline">Turning Ideas into Reality through Code and Creativity</p>
             <div class="cta">
                 <a href="#contact" class="cta-button">Contact Me</a>
-                <a href="#portfolio" class="cta-button">View My Work</a>
+                <a href="#projects" class="cta-button">View My Work</a>
             </div>
         </div>
     </section>
@@ -71,8 +71,8 @@
                     With 2 years of experience in web and app development, my expertise lies in JavaScript, React, Node.js, and I thrive on solving complex problems with elegant solutions.
                 </p>
                 <div class="contact-info" data-aos="fade-right" data-aos-delay="300">
-                    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+                    <p>Email: <a href="mailto:letsmail.m.raj@gmail.com">letsmail.m.raj@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+919076131647">+91 9076131647</a></p>
                     <a href="#contact" class="cta-button">Contact Form</a>
                 </div>
             </div>
@@ -80,7 +80,7 @@
     </section>
 
     <!-- Skills Section -->
-<section class="skills">
+<section class="skills" id="skills">
        <div class="skills-container">
            <h2>Skills</h2>
            
@@ -166,35 +166,48 @@
            <h2>Projects</h2>
            <div class="projects-grid">
                <div class="project-item">
-                   <h3>Project 1: [Title]</h3>
-                   <p>Description: A brief overview of what the project is about.</p>
+                   <h3>Project 1: Newsify - News App</h3>
+                   <p>Description:Led the creation of a News Web-App, fetching real-time updates via News API
+              </p>
                    <div class="project-links">
-                       <a href="[Live Demo URL]" class="project-link">Live Demo</a>
-                       <a href="[Code Repository URL]" class="project-link">Code Repository</a>
+                       <a href="https://github.com/raj1828/React-News-App"target="_blank"  class="project-link">Live Demo</a>
+                       <a href="https://github.com/raj1828/React-News-App"target="_blank"  class="project-link">Code Repository</a>
                    </div>
                </div>
                <div class="project-item">
-                   <h3>Project 2: [Title]</h3>
-                   <p>Description: A brief overview of what the project is about.</p>
+                   <h3>Project 2: Quiz App - Android</h3>
+                   <p>Description: Created a user-friendly Quiz app in Kotlin that includes multiple-choice questions and fast feedback on answers.</p>
                    <div class="project-links">
-                       <a href="[Live Demo URL]" class="project-link">Live Demo</a>
-                       <a href="[Code Repository URL]" class="project-link">Code Repository</a>
+                       <a href="https://github.com/raj1828/Quiz-App-Kotlin"target="_blank"  class="project-link">Live Demo</a>
+                       <a href="https://github.com/raj1828/Quiz-App-Kotlin"target="_blank"  class="project-link">Code Repository</a>
                    </div>
                </div>
                <div class="project-item">
-                   <h3>Project 3: [Title]</h3>
-                   <p>Description: A brief overview of what the project is about.</p>
+                   <h3>Project 3: Jivan Photography Blog Website</h3>
+                   <p>Description: Independently crafted a responsive Photography Website tailored to client needs.
+                      </p>
                    <div class="project-links">
-                       <a href="[Live Demo URL]" class="project-link">Live Demo</a>
-                       <a href="[Code Repository URL]" class="project-link">Code Repository</a>
+                       <a href="https://raj1828.github.io/Jivan-Photography/"target="_blank"  class="project-link">Live Demo</a>
+                       <a href="https://github.com/raj1828/Jivan-Photography"target="_blank"  class="project-link">Code Repository</a>
                    </div>
                </div>
                <div class="project-item">
-                   <h3>Project 4: [Title]</h3>
-                   <p>Description: A brief overview of what the project is about.</p>
+                   <h3>Project 4: Chat GPT Clone</h3>
+                   <p>Description: I created a ChatGPT clone that uses the OpenAI API for natural language chats.
+                     </p>
                    <div class="project-links">
-                       <a href="[Live Demo URL]" class="project-link">Live Demo</a>
-                       <a href="[Code Repository URL]" class="project-link">Code Repository</a>
+                       <a href="https://github.com/raj1828/chat-bot-ai" target="_blank" class="project-link">Live Demo</a>
+                       <a href="https://github.com/raj1828/chat-bot-ai" target="_blank" class="project-link">Code Repository</a>
+                   </div>
+               </div>
+               <div class="project-item">
+                   <h3>Project 5: Hospital Management System</h3>
+                   <p>Description: Created a streamlined patient record management system for adding, removing, and viewing data, allowing clinicians easy
+                     access.
+                     </p>
+                   <div class="project-links">
+                       <a href="https://github.com/raj1828/Hospital_Management_System" target="_blank" class="project-link">Live Demo</a>
+                       <a href="https://github.com/raj1828/Hospital_Management_System" target="_blank" class="project-link">Code Repository</a>
                    </div>
                </div>
                <!-- Add more project items as needed -->
@@ -204,15 +217,95 @@
            </div>
        </div>
    </section>
-   
-    <!-- Contact Section -->
-    <section id="contact">
-        <!-- Your contact form or other content here -->
-    </section>
 
-    <!-- Footer Section -->
+   <!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+       <div class="testimonials-container">
+           <h2>Testimonials</h2>
+           <div class="testimonial-slider">
+               <div class="testimonial-slide active">
+                   <img src="user.png" alt="User 1" class="testimonial-img">
+                   <h3>Jivan Gawand</h3>
+                   <div class="ratings">
+                       &#9733;&#9733;&#9733;&#9733;&#9733; <!-- 5 stars -->
+                   </div>
+                   <p class="testimonial-comment">"Raj Mhatre exceeded my expectations by creating a stunning and functional photography website. His attention to detail and dedication to understanding my vision resulted in a seamless and elegant design that has impressed my clients. I highly recommend Raj for his exceptional skills and professionalism."</p>
+               </div>
+               <div class="testimonial-slide">
+                   <img src="user.png" alt="User 2" class="testimonial-img">
+                   <h3>Manish Patil</h3>
+                   <div class="ratings">
+                       &#9733;&#9733;&#9733;&#9733;&#9734;&#9734; <!-- 4 stars -->
+                   </div>
+                   <p class="testimonial-comment">"Raj Mhatre did an outstanding job developing our website. His expertise and commitment ensured a smooth and efficient process. The final product exceeded our expectations and has been well-received by our clients. Highly recommend Raj for any web development needs."</p>
+               </div>
+               <!-- Add more testimonial slides as needed -->
+           </div>
+       </div>
+   </section>
+
+   <!-- Contact Section -->
+   <section id="contact" class="contact">
+       <div class="contact-container">
+              <div class="contact-form">
+                     <h2>Contact Me</h2>
+                     <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">Send</button>
+                        </form>
+                        
+                 </div>
+           <div class="contact-map">
+               <h2>My Location</h2>
+               <iframe
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345073615!2d144.96305771531556!3d-37.81627977975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43bf59f107%3A0x5045675218ce7e0!2sVictoria!5e0!3m2!1sen!2sau!4v1617617573739!5m2!1sen!2sau"
+                   width="600"
+                   height="450"
+                   style="border:0;"
+                   allowfullscreen=""
+                   loading="lazy">
+               </iframe>
+           </div>
+       </div>
+   </section>
+   
     <footer>
-        <!-- Your footer content here -->
+        <!-- Footer Section -->
+<footer class="footer">
+       <div class="footer-container">
+           <div class="footer-links">
+               <h3>Quick Links</h3>
+               <ul>
+                   <li><a href="#about-section">About Me</a></li>
+                   <li><a href="#skills">Skills</a></li>
+                   <li><a href="#projects">Projects</a></li>
+                   <li><a href="#contact">Contact</a></li>
+               </ul>
+           </div>
+           <div class="footer-legal">
+               <h3>Legal Info</h3>
+               <ul>
+                   <li><a href="#">Privacy Policy</a></li>
+                   <li><a href="#">Terms of Service</a></li>
+               </ul>
+           </div>
+       </div>
+       <div class="footer-bottom">
+           <p>© Raj Mhatre, 2024.</p>
+       </div>
+   </footer>
+   
     </footer>
 
     <!-- Scripts -->
