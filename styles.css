@@ -88,6 +88,38 @@
    .social-icons a:hover {
        transform: scale(1.2); /* Optional: Scale effect on hover */
    }
+   @media (max-width: 768px) {
+       .social-icons {
+           display: none; /* Hide social icons on small screens */
+       }
+       
+       .menu-toggle {
+           display: block; /* Show the menu toggle button on small screens */
+       }
+       
+       .nav-links {
+           display: none; /* Hide navigation links by default on small screens */
+           flex-direction: column; /* Stack navigation links vertically */
+           position: absolute;
+           top: 100%;
+           left: 0;
+           width: 100%;
+           background-color: #333; /* Match navbar background */
+           padding: 10px 0;
+           text-align: center; /* Center-align links */
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better separation */
+           z-index: 999; /* Ensure it's above other content */
+       }
+       
+       .nav-links.active {
+           display: flex; /* Show links when active (hamburger menu clicked) */
+       }
+       
+       .nav-links li {
+           margin-left: 0; /* Remove margin between links in vertical layout */
+           margin-bottom: 10px; /* Add space between links */
+       }
+   }
    
    /* Hero Section */
    .hero {
