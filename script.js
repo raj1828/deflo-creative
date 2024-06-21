@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
        particlesJS.load('particles-js', 'particles.json', function() {
            console.log('Particles.js loaded');
        });
-       
+   
        // JavaScript for Testimonial Slider
        let currentSlide = 0;
        const slides = document.querySelectorAll('.testimonial-slide');
@@ -58,6 +58,21 @@ document.addEventListener('DOMContentLoaded', function() {
    
        // Get form data
        const form = document.getElementById('contact-form');
+       const email = form.querySelector('input[name="email"]').value;
+       const name = form.querySelector('input[name="name"]').value;
+       const message = form.querySelector('textarea[name="message"]').value;
+   
+       // Validate form inputs
+       if (!email || !name || !message) {
+           alert('All fields are required. Please fill in all fields.');
+           return;
+       }
+   
+       // Validate email
+       if (email === 'letsmail.m.raj@gmail.com') {
+           alert('This email address is not allowed. Please use a different email.');
+           return;
+       }
    
        // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual service and template IDs
        emailjs.sendForm('service_0j4jzp6', 'template_ztee83e', form)
@@ -73,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
    
    // Attach submit event listener to the form
    document.getElementById('contact-form').addEventListener('submit', sendEmail);
+   
    document.addEventListener('DOMContentLoaded', function() {
        // Smooth scrolling for navigation links
        const navLinks = document.querySelectorAll('.nav-links a');
@@ -94,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
            });
        });
    });
+   
    document.addEventListener('DOMContentLoaded', function() {
        const menuToggle = document.querySelector('.menu-toggle');
        const navLinks = document.querySelector('.nav-links');
@@ -102,4 +119,4 @@ document.addEventListener('DOMContentLoaded', function() {
            navLinks.classList.toggle('active');
        });
    });
-      
+   
